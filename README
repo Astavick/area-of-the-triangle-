@@ -1,0 +1,27 @@
+package triangle_calculator;
+import java.util.Scanner;
+public class TriangleArea {
+
+    public static void main(String[] args) {
+        calculateTriangleArea();
+    }
+
+    public static void calculateTriangleArea() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the base of the triangle: ");
+        double base = input.nextDouble();
+
+        System.out.print("Enter the height of the triangle: ");
+        double height = input.nextDouble();
+
+        double area = getTriangleArea(base, height); 
+
+        System.out.println("The area of the triangle is: " + area);
+    }
+
+    // Method to calculate the area of the triangle
+    private static double getTriangleArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+}
